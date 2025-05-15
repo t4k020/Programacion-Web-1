@@ -1,0 +1,52 @@
+﻿/* @import url("temas-colores-fuentes.css"); */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+#encabezado-principal {
+   background-color: red;
+   color: white;
+}
+
+#navegacion-categoria {
+   background-color: lime;
+}
+
+#seccion-categoria {
+   min-height: 720px;
+   background-color: orange;
+}
+
+.articulo-categoria {
+   border: solid 3px gray;
+}
+
+#footer-principal {
+   display: flex; 
+   justify-content: space-evenly;
+   background-color: #3a693f;
+   color: white;
+   padding: 3em ;
+}
+
+#footer-principal-izquierda,#footer-principal-derecha,#footer-principal-centro{
+   
+   background-color: #2c5030;
+   border-radius: 1em;
+   padding:  5em;
+   padding-top: 3em;
+}
+
+
+#qr-code{
+   display: flex;
+   text-align: center;
+ 
+}
+
+#qr-code {
+   width:10em;
+   height:10em;
+}
