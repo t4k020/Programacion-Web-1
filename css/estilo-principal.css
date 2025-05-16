@@ -120,13 +120,42 @@
 }
 
 #seccion-categoria {
-   min-height: 720px;
-   background-color: orange;
+   min-height: auto;
+   background-color: black;
+  
+
+   display: inline-flex;
+   flex-wrap: wrap;
+   justify-content: center;
+
+
+  
 }
 
+
+
 .articulo-categoria {
-   border: solid 3px gray;
+   
+   border: solid 15px lime;
+   height: auto;
+   width:auto;
+   float: left;
+   margin: 20px;
+   border-radius: 15px;
+   text-align: center;
+   padding: 15px;
+
+   
 }
+.articulo-categoria h4{
+    color:gray;
+}
+.articulo-categoria p  {
+  color:gray;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
 
 #footer-principal {
    display: flex; 
@@ -134,6 +163,7 @@
    background-color: #3a693f;
    color: white;
    padding: 3em ;
+   width: 100%;
 }
 
 #footer-principal-izquierda,#footer-principal-derecha,#footer-principal-centro{
