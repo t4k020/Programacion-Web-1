@@ -26,3 +26,15 @@
    color: var(--dark-color-texto);
    background-color: var(--dark-color-fondo);
 }
+
+
+
+.Roboto{
+   font-family: 'Roboto Mono', monospace;
+}
+.Cabin{
+   font-family: 'Cabin', sans-serif;
+}
+.Mulish{
+     font-family: 'Mulish', sans-serif;
+}
