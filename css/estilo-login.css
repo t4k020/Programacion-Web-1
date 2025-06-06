@@ -4,7 +4,10 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(10deg, #000000, #5b0cb6);
+    background: linear-gradient(10deg, #000000, #0ce926);
+}
+a{
+   color: #e80c4c;
 }
 
 /* Header con logo e íconos centrados */
@@ -18,11 +21,6 @@ body {
     gap: 2rem;
 }
 
-.logo {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #59a3e8;
-}
 
 .icons {
     display: flex;
@@ -31,7 +29,7 @@ body {
 
 .icon {
     font-size: 1.2rem;
-    color: #aa31e3;
+    color: #cc0b42;
 }
 
 
@@ -132,45 +130,24 @@ body {
 }*/
 
 #footer-principal {
-    background-color: #000;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em;
-    flex-wrap: wrap;
-    gap: 1rem;
-    border-top: 2px solid #5b0cb6;
+   display: flex; 
+   justify-content: center;
+   gap: 10em;
+   background-color: #cc0b42;
+   color: white;
+   padding: 3em ;
+   max-height: 100em;
+   
 }
 
-.footer-columna {
-    flex: 1 1 250px;
-    text-align: center;
+#footer-principal-izquierda,#footer-principal-derecha,#footer-principal-centro{
+   
+   background-color: #000000;
+   border-radius: 1em;
+   padding:  5em;
+   padding-top: 3em;
+   border: 0.2em solid ;
+   border-color: #0ce926;
 }
 
-.footer-columna h3 {
-    color: #59a3e8;
-    margin-bottom: 1rem;
-}
 
-.footer-columna a {
-    color: #aa31e3;
-    text-decoration: none;
-    display: block;
-    margin: 0.3rem 0;
-}
-
-.footer-columna a:hover {
-    color: #fff;
-    text-decoration: underline;
-}
-
-#footer-centro img#qr-code {
-    width: 50%;
-    height: auto;
-}
-
-#footer-centro p {
-    font-size: 1rem;
-    color: #ccc;
-}
