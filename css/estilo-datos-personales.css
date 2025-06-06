@@ -1,18 +1,20 @@
 /* estilos-datos-personales.css */
 
 /* Fondo general y centrado del login */
+@import url(estilo-principal.css);
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(10deg, #000000, #5b0cb6);
+    background: linear-gradient(10deg, #000000, #0ce926);
 }
 
 p{
     margin: 5px;
 
 }
+
 
 /* Header con logo e íconos centrados */
 #encabezado-principal {
@@ -25,11 +27,6 @@ p{
     gap: 2rem;
 }
 
-.logo {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #59a3e8;
-}
 
 .icons {
     display: flex;
@@ -38,7 +35,7 @@ p{
 
 .icon {
     font-size: 1.2rem;
-    color: #aa31e3;
+    color: #e80c4c;
 }
 
 
@@ -73,7 +70,7 @@ p{
     padding: 10px;
     box-shadow: inset 0px 0px 15px #0000005f;
     border-radius: 10px;
-    color: #4caf50;
+    color: #ffffff;
     font-size: 16px;
 
 }
@@ -147,7 +144,7 @@ p{
 }*/
 
 #footer-principal {
-    background-color: #000;
+    background-color: #e80c4c;
     color: #ffffff;
     display: flex;
     justify-content: space-around;
@@ -155,7 +152,6 @@ p{
     padding: 1em;
     flex-wrap: wrap;
     gap: 1rem;
-    border-top: 2px solid #5b0cb6;
 }
 
 .footer-columna {
