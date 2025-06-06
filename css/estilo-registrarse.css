@@ -1,10 +1,11 @@
 /* Fondo general y centrado del login */
+@import url(estilo-principal.css);
 body {
     margin: 0;
     display: flex;
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(10deg, #000000, #5b0cb6);
+    background: linear-gradient(10deg, #000000, #0ce926);
 }
 
 /* Header con logo e íconos centrados */
@@ -18,11 +19,6 @@ body {
     gap: 2rem;
 }
 
-.logo {
-    font-size: 2.2em;
-    font-weight: bold;
-    color: #59a3e8;
-}
 
 .icons {
     display: flex;
@@ -31,7 +27,7 @@ body {
 
 .icon {
     font-size: 1.2rem;
-    color: #aa31e3;
+    color: #e80c4c;
 }
 
 
@@ -137,7 +133,7 @@ body {
 }*/
 
 #footer-principal {
-    background-color: #000;
+    background-color: #e80c4c;
     color: #ffffff;
     display: flex;
     justify-content: space-around;
@@ -145,29 +141,6 @@ body {
     padding: 1em;
     flex-wrap: wrap;
     gap: 1rem;
-    border-top: 2px solid #5b0cb6;
-}
-
-.footer-columna {
-    flex: 1 1 250px;
-    text-align: center;
-}
-
-.footer-columna h3 {
-    color: #59a3e8;
-    margin-bottom: 1rem;
-}
-
-.footer-columna a {
-    color: #aa31e3;
-    text-decoration: none;
-    display: block;
-    margin: 0.3rem 0;
-}
-
-.footer-columna a:hover {
-    color: #fff;
-    text-decoration: underline;
 }
 
 #footer-centro img#qr-code {
