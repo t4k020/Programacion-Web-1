@@ -2,6 +2,7 @@
 
 /* Fondo general y centrado del login */
 @import url(estilo-principal.css);
+@import url(estilo-registrarse.css);
 body {
     margin: 0;
     display: flex;
@@ -27,6 +28,9 @@ p{
     gap: 2rem;
 }
 
+.input-box{
+    display: flex;
+}
 
 .icons {
     display: flex;
