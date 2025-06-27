@@ -94,6 +94,7 @@ a{
   align-items: center;
   margin-left: 10em;
   margin-right: 10em;
+  display: none;
 }
 
 .item-valor-nombre,.item-valor-autor{
