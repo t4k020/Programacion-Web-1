@@ -5,11 +5,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish');
 
 :root {
+  --color-texto: var(--light-color-texto);
+  --color-fondo: var(--light-color-fondo);
+  --color-acento-1: var(--light-color-acento-1);
+  --color-acento-2: var(--light-color-acento-2);
+  --color-acento-3: var(--light-color-acento-3);
+
+
    --light-color-texto: #1d1816;
    --light-color-fondo: #fefcfb;
    --light-color-acento-1: #0ce926;
    --light-color-acento-2: #3a693f;
    --light-color-acento-3: #e80c4c;
+   
    --dark-color-texto: #f4f1f1;
    --dark-color-fondo: #201918;
    --dark-color-acento-1: #0ce926;
