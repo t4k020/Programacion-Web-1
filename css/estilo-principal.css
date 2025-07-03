@@ -1,4 +1,4 @@
-﻿/* @import url("temas-colores-fuentes.css"); */
+﻿ @import url("temas-colores-fuentes.css"); 
 * {
    margin: 0;
    padding: 0;
@@ -9,16 +9,20 @@
 
 h2 {
    font-family: 'Roboto Mono', monospace;
-   color: white;
 }
 
 body {
    background-color: #000000;
+   color: #f4f1f1;
    overflow-x: hidden;
    max-width: 100%;
 }
 
-a {
+body.whiteMode {
+  color: #1d1816;
+  background-color: #f4f1f1;
+}
+a{
    color: #e80c4c;
 }
 
@@ -123,10 +127,10 @@ a {
    color: rgb(255, 255, 255);
 }
 
-.articulo-categoria p {
-   color: rgb(255, 255, 255);
-   font-weight: bold;
-   text-transform: uppercase;
+.articulo-categoria p  {
+  
+  font-weight:bold;
+  text-transform:uppercase;
 }
 
 
@@ -169,7 +173,7 @@ a {
 }
 
 #encabezado-principal {
-   background-color: rgb(0, 0, 0);
+   background-color: #201918;
    padding-top: 1rem;
    /* Padding vertical  */
    padding-bottom: 1rem;
@@ -180,6 +184,11 @@ a {
    align-items: center;
    /* Centra verticalmente */
    flex-wrap: wrap;
+}
+
+#encabezado-principal.whiteMode{
+   background-color: #fefcfb;
+   color: #1d1816;
 }
 
 #navegacion-categoria {
@@ -193,15 +202,15 @@ a {
 
 #navegacion-categoria a {
    background-color: #e80c4c;
-   text-decoration: none;
-   padding: 10px 15px;
-   font-size: 2em;
-
-   border: 2px solid #b90b3c;
-   border-radius: 3em;
-   color: black;
-   font-weight: bold;
-   transition: background-color 0.3s;
+   text-decoration: none;   
+  padding: 10px 15px;
+  font-size: 2em;
+  
+  border: 2px solid #b90b3c;
+  border-radius: 3em;
+  color: #201918;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
 
 #navegacion-categoria a:hover {
@@ -210,12 +219,25 @@ a {
 
 #seccion-categoria {
    min-height: auto;
-   background-color: black;
+   background-color: #201918;
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    max-width: 1500px;
    margin: 0 auto;
 }
+
+#seccion-categoria.whiteMode {
+   min-height: auto;
+   background-color: #fefcfb;
+   color: #1d1816;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   max-width: 1500px;
+    margin: 0 auto; 
+}
+
+
+
 
 @media screen and (max-width: 800px) {
 

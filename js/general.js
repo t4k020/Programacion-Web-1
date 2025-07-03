@@ -17,4 +17,34 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
+  let darkMode = document.getElementById("darkMode")
+  let imagen = document.getElementById("imagen")
+  darkMode.addEventListener("click", function(){
+
+     if (document.body.classList.contains("whiteMode")) {
+    imagen.src = "./assets/img/logo-en-negro.png";
+  } else {
+    imagen.src = "./assets/img/logo-en-blanco.png";
+  }
+
+  if (darkMode.classList.contains("fa-moon")) {
+    darkMode.classList.remove("fa-moon");
+    darkMode.classList.add("fa-sun");
+  } else {
+    darkMode.classList.remove("fa-sun");
+    darkMode.classList.add("fa-moon");
+  }
+
+  document.body.classList.toggle("whiteMode")
+  
+  document.getElementById("seccion-categoria").classList.toggle("whiteMode");
+  document.getElementById("encabezado-principal").classList.toggle("whiteMode");
+
+
+  });
+
+ 
 });
+
+
+
