@@ -1,21 +1,24 @@
 ﻿/* @import url("temas-colores-fuentes.css"); */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Cabin', sans-serif;
-   
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Cabin', sans-serif;
+
 }
-h2{
+
+h2 {
    font-family: 'Roboto Mono', monospace;
    color: white;
 }
-body{
+
+body {
    background-color: #000000;
    overflow-x: hidden;
    max-width: 100%;
 }
-a{
+
+a {
    color: #e80c4c;
 }
 
@@ -87,77 +90,81 @@ a{
 
 
 
-.detalle-articulo{
+.detalle-articulo {
    display: grid;
-   grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-  gap: 20px;
-  align-items: center;
-  margin-left: 10em;
-  margin-right: 10em;
-  display: none;
+   grid-template-columns: repeat(2, 1fr);
+   /* 2 columnas */
+   gap: 20px;
+   align-items: center;
+   margin-left: 10em;
+   margin-right: 10em;
+   display: none;
 }
 
-.item-valor-nombre,.item-valor-autor{
+.item-valor-nombre,
+.item-valor-autor {
    font-family: 'Roboto Mono', monospace;
    font-size: 1.6em;
 }
 
 
 .articulo-categoria {
-   
    border: solid 15px #0ce926;
    height: auto;
-   width:auto;
+   width: auto;
    float: left;
    margin: 20px;
    border-radius: 15px;
    text-align: center;
    padding: 15px;
+}
 
-   
+.articulo-categoria h4 {
+   color: rgb(255, 255, 255);
 }
-.articulo-categoria h4{
-    color:rgb(255, 255, 255);
-}
-.articulo-categoria p  {
-  color:rgb(255, 255, 255);
-  font-weight:bold;
-  text-transform:uppercase;
+
+.articulo-categoria p {
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   text-transform: uppercase;
 }
 
 
 #footer-principal {
-   display: flex; 
+   display: flex;
    justify-content: center;
    gap: 10em;
    background-color: #cc0b42;
    color: white;
-   padding: 3em ;
-   
+   padding: 3em;
+
 }
 
-#footer-principal-izquierda,#footer-principal-derecha,#footer-principal-centro{
-   
+#footer-principal-izquierda,
+#footer-principal-derecha,
+#footer-principal-centro {
+
    background-color: #000000;
    border-radius: 1em;
-   padding:  5em;
+   padding: 5em;
    padding-top: 3em;
-   border: 0.2em solid ;
+   border: 0.2em solid;
    border-color: #0ce926;
 }
 
 
-#qr-code{
+#qr-code {
    display: flex;
    text-align: center;
-   width:10em;
-   height:10em;
- 
+   width: 10em;
+   height: 10em;
+
 }
-#columna{
+
+#columna {
    display: flex;
    justify-content: center;
-   
+
    gap: 1em;
 }
 
@@ -181,24 +188,24 @@ a{
    padding: 1em;
    gap: 2em;
    justify-content: center;
-  
+
 }
 
 #navegacion-categoria a {
    background-color: #e80c4c;
-   text-decoration: none;   
-  padding: 10px 15px;
-  font-size: 2em;
-  
-  border: 2px solid #b90b3c;
-  border-radius: 3em;
-  color: black;
-  font-weight: bold;
-  transition: background-color 0.3s;
+   text-decoration: none;
+   padding: 10px 15px;
+   font-size: 2em;
+
+   border: 2px solid #b90b3c;
+   border-radius: 3em;
+   color: black;
+   font-weight: bold;
+   transition: background-color 0.3s;
 }
 
 #navegacion-categoria a:hover {
-  background-color: #db6f8e; 
+   background-color: #db6f8e;
 }
 
 #seccion-categoria {
@@ -207,15 +214,15 @@ a{
    display: grid;
    grid-template-columns: repeat(2, 1fr);
    max-width: 1500px;
-    margin: 0 auto; 
+   margin: 0 auto;
 }
 
 @media screen and (max-width: 800px) {
 
-   *{
+   * {
       font-size: 80%;
    }
-  
+
 
    .search-bar {
       margin-left: 1rem;
@@ -239,11 +246,12 @@ a{
       justify-content: space-around;
       /* Distribute space around icons */
    }
-   .item-valor-portada{
+
+   .item-valor-portada {
       max-width: 50%;
    }
 
-    #encabezado-principal {
+   #encabezado-principal {
       flex-direction: column;
       /* Stack items vertically on small screens */
 
@@ -251,17 +259,21 @@ a{
       /* Align items to the start */
    }
 
-   #navegacion-categoria{
+   #navegacion-categoria {
       flex-direction: column;
       align-items: center;
    }
 
    #seccion-categoria {
-   min-height: auto;
-   background-color: black;
-   display: grid;
-   grid-template-columns: repeat(1, 1fr);
-   max-width: 80%;
-    margin: 0 auto; 
+      min-height: auto;
+      background-color: black;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 80%;
+      margin: 0 auto;
+   }
 }
-}
+
+
+
+

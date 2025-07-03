@@ -1,6 +1,3 @@
-function mostrarMas() {
-  document.getElementByClassName('detalle-articulo').style.display = 'block';
-}
 document.addEventListener("DOMContentLoaded", function () {
   // Selecciona todos los contenedores que tengan clase "item"
   const items = document.querySelectorAll(".articulo-categoria");
