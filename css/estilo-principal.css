@@ -326,3 +326,11 @@
  h4 {
     padding: 10px;
  }
+
+
+
+ .ico-fav{
+   height: 100px;
+   position: absolute;
+   margin-left: 14%;
+ }

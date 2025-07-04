@@ -1,6 +1,7 @@
 import data from "../data/items.json" with { type: 'json' };
 
 document.addEventListener("DOMContentLoaded", function () {
+
   // Selecciona todos los contenedores que tengan clase "item"
   const items = document.querySelectorAll(".articulo-categoria");
 
@@ -35,9 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
-});
 
-document.querySelector("#cerrarPopap").addEventListener("click", function () {
-  document.querySelector("#modal").style.display = "none";
-  document.querySelector("body").style.overflow = "auto";
-})
+  document.querySelector("#cerrarPopap").addEventListener("click", function () {
+    document.querySelector("#modal").style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
+  })
+
+});
