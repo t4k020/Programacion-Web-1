@@ -1,4 +1,6 @@
-﻿export function cargarJuegos(data) {
+﻿import { accionesTarjetas } from "./accionesTarjetas.js";
+
+export function cargarJuegos(data) {
    const seccion = document.querySelector('#seccion-categoria');
    seccion.innerHTML = '';
 
@@ -31,4 +33,6 @@
                </article>
                `
    });
+
+   accionesTarjetas();
 }

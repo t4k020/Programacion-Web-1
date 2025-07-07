@@ -1,8 +1,8 @@
 import data from "../data/items.json" with { type: 'json' };
 
-document.addEventListener("DOMContentLoaded", function () {
+export function accionesTarjetas() {
 
-  // Selecciona todos los contenedores que tengan clase "item"
+  // FUNCIONALIDAD PARA LAS IMAGENES
   const items = document.querySelectorAll(".articulo-categoria");
 
   items.forEach(function (item) {
@@ -42,4 +42,22 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector("body").style.overflow = "auto";
   })
 
-});
+
+
+  // FUNCIONALIDAD PARA LOS TITULOS
+  items.forEach(function (item) {
+    const titulo = item.querySelector(".item-valor-nombre");
+    const detalle = item.querySelector(".detalle-articulo");
+
+    if (titulo && detalle) {
+      titulo.addEventListener("click", function () {
+        if (detalle.style.display === "block") {
+          detalle.style.display = "none";
+        } else {
+          detalle.style.display = "block";
+        }
+      });
+    }
+  });
+};
+
