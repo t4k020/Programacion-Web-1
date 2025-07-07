@@ -2,6 +2,7 @@
     let imagen = document.getElementById("imagen")
     let datosPersonales = document.getElementById("cdp")
     let login = document.getElementById("login")
+    let categoria = document.getElementById("seccion-categoria")
 
     darkMode.addEventListener("click", function () {
 
@@ -26,6 +27,9 @@
         }
         if(login){
             login.classList.toggle("whiteModes")
+        }
+        if(categoria){
+            categoria.classList.toggle("whiteMode")
         }
 
     });

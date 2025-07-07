@@ -224,10 +224,7 @@
     min-height: auto;
     background-color: #fefcfb;
     color: #1d1816;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 1500px;
-    margin: 0 auto;
+   
  }
 
 
