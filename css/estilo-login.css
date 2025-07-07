@@ -1,4 +1,5 @@
 /* Fondo general y centrado del login */
+@import url(estilo-principal.css);
 body {
     margin: 0;
     display: flex;
@@ -41,7 +42,9 @@ a{
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    background-color: #077914;
 }
+
 
 /* Estilo del cuadro de login */
 .login-box {
@@ -54,12 +57,17 @@ a{
    max-width: 400px;
    animation: fadeIn 0.8s ease-in-out;
 }
+.login-box.whiteModes{
+    background-color: #f20f50;
+    color: rgb(0, 0, 0);
+}
 
 /* Título del login */
 .login-box h2 {
     text-align: center;
     color: #ffffff;
     margin-bottom: 2rem;
+    size: 2em;
 }
 
 /* Inputs */
@@ -141,14 +149,5 @@ a{
    
 }
 
-#footer-principal-izquierda,#footer-principal-derecha,#footer-principal-centro{
-   
-   background-color: #000000;
-   border-radius: 1em;
-   padding:  5em;
-   padding-top: 3em;
-   border: 0.2em solid ;
-   border-color: #0ce926;
-}
 
 

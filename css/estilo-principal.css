@@ -30,11 +30,7 @@
 
 
 
- .logo {
-    font-size: 2em;
-    font-weight: bold;
-    color: #59a3e8
- }
+
 
  .search-bar {
     max-width: 100%;
@@ -123,10 +119,6 @@
     border-radius: 15px;
     text-align: center;
     padding: 15px;
- }
-
- .articulo-categoria h4 {
-    color: rgb(255, 255, 255);
  }
 
  .articulo-categoria p {
@@ -318,7 +310,7 @@
     height: 100%;
     background-color: black;
     border: 3px solid red;
-    color: white;
+    
     text-align: center;
  }
 

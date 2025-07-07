@@ -19,12 +19,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   let darkMode = document.getElementById("darkMode")
   let imagen = document.getElementById("imagen")
+  
   darkMode.addEventListener("click", function () {
 
     if (document.body.classList.contains("whiteMode")) {
-      imagen.src = "./assets/img/logo-en-negro.png";
+      imagen.src = "../assets/img/logo-en-negro.png";
     } else {
-      imagen.src = "./assets/img/logo-en-blanco.png";
+      imagen.src = "../assets/img/logo-en-blanco.png";
     }
 
     if (darkMode.classList.contains("fa-moon")) {
@@ -36,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.body.classList.toggle("whiteMode")
+
 
     document.getElementById("seccion-categoria").classList.toggle("whiteMode");
     document.getElementById("encabezado-principal").classList.toggle("whiteMode");
