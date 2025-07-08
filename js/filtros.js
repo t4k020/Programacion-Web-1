@@ -6,11 +6,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const linksCategorias = document.querySelectorAll("a.tab-categoria");
     const tabCategoria1 = document.getElementById("tab-categoria-1");
     const buscador = document.querySelector('#search')
+
     let categoriasFiltradas = items;
+    let itemsTotales = items;
+
+    const favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
+    const paginaActual = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
+    if (paginaActual === 'favoritos.html') itemsTotales = items.filter((item) => favoritos.includes(item.Id));
+
+
 
     linksCategorias.forEach((linkCategoria) => {
         linkCategoria.addEventListener("click", () => {
-            categoriasFiltradas = items.filter((item) => item.Categoria === linkCategoria.innerHTML)
+            categoriasFiltradas = itemsTotales.filter((item) => item.Categoria === linkCategoria.innerHTML)
             buscador.dispatchEvent(new Event('input'));
 
             console.log('Filtro categoria: ', categoriasFiltradas)

@@ -1,5 +1,5 @@
 import data from "../data/items.json" with { type: 'json' };
-import { iniciarFavoritos } from './agregar-quitar-favoritos.js';
+// import { iniciarFavoritos } from './agregar-quitar-favoritos.js';
 
 
 // REPLANTEAR CODIGO DE VUELTA PARA LA PAGINA DE FAVORITOS
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             });
-            iniciarFavoritos();
+            // iniciarFavoritos();
         });
     });
 

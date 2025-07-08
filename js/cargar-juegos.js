@@ -5,8 +5,7 @@ export function cargarJuegos(data) {
    const seccion = document.querySelector('#seccion-categoria');
    seccion.innerHTML = '';
 
-   let favoritos = [];
-   favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
+   const favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
    console.log('favoritos: ', favoritos)
 
 

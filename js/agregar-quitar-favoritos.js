@@ -1,6 +1,5 @@
 export function agregarQuitarFavoritos() {
-    let favoritos = [];
-    favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
+    const favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
 
     document.querySelectorAll(".ico-fav").forEach((item) => {
         item.addEventListener("click", function (e) {
