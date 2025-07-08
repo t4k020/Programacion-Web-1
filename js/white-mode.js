@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
     let darkMode = document.getElementById("darkMode")
     let imagen = document.getElementById("imagen")
     let datosPersonales = document.getElementById("cdp")
@@ -7,30 +8,30 @@
     darkMode.addEventListener("click", function () {
 
         if (document.body.classList.contains("whiteMode")) {
-        imagen.src = "../assets/img/logo-en-negro.png";
+            imagen.src = "../assets/img/logo-en-negro.png";
         } else {
-        imagen.src = "../assets/img/logo-en-blanco.png";
+            imagen.src = "../assets/img/logo-en-blanco.png";
         }
 
         if (darkMode.classList.contains("fa-moon")) {
-        darkMode.classList.remove("fa-moon");
-        darkMode.classList.add("fa-sun");
+            darkMode.classList.remove("fa-moon");
+            darkMode.classList.add("fa-sun");
         } else {
-        darkMode.classList.remove("fa-sun");
-        darkMode.classList.add("fa-moon");
+            darkMode.classList.remove("fa-sun");
+            darkMode.classList.add("fa-moon");
         }
 
         document.body.classList.toggle("whiteMode")
         document.getElementById("encabezado-principal").classList.toggle("whiteMode");
-        if(datosPersonales){
+        if (datosPersonales) {
             datosPersonales.classList.toggle("whiteModes")
         }
-        if(login){
+        if (login) {
             login.classList.toggle("whiteModes")
         }
-        if(categoria){
+        if (categoria) {
             categoria.classList.toggle("whiteMode")
         }
 
     });
-
+});

@@ -1,8 +1,14 @@
 ﻿import { accionesTarjetas } from "./accionesTarjetas.js";
+import { agregarQuitarFavoritos } from './agregar-quitar-favoritos.js';
 
 export function cargarJuegos(data) {
    const seccion = document.querySelector('#seccion-categoria');
    seccion.innerHTML = '';
+
+   let favoritos = [];
+   favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
+   console.log('favoritos: ', favoritos)
+
 
    data.forEach((item) => {
       const { Categoria, Id, Nombre, Autor, Portada, Descripcion, Rating } = item;
@@ -11,6 +17,7 @@ export function cargarJuegos(data) {
 
       seccion.innerHTML += `
                <article id="${Id}" class="articulo-categoria">
+                  <img class="ico-fav" src="../assets/img/${favoritos.includes(Id) ? 'fav.ico' : 'unfav.ico'}" alt="agregar/quitar favoritos">
                   <header class="header-articulo">
                      <p class="item-valor-nombre">${Nombre}</p>
                      <p class="item-valor-autor">${Autor}</p>
@@ -35,4 +42,5 @@ export function cargarJuegos(data) {
    });
 
    accionesTarjetas();
+   agregarQuitarFavoritos();
 }

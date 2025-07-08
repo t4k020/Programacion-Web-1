@@ -1,6 +1,6 @@
 import configuracion from "../config/configuracion.json" with { type: 'json' };
 import items from "../data/items.json" with { type: 'json' };
-import { cargarJuegos } from './cargar-datos.js';
+import { cargarJuegos } from './cargar-juegos.js';
 
 document.addEventListener("DOMContentLoaded", function () {
     const linksCategorias = document.querySelectorAll("a.tab-categoria");
