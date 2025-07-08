@@ -1,19 +1,71 @@
 // items es un array que contiene todos los 60 items, con sus correspondientes campos
 import items from "../data/items.json" with { type: 'json' };
 
-// Obtener número aleatorio entre 1 y 60
-function numeroAleatorio() {
-  return Math.floor(Math.random() * 60) + 1;
+function numeroAleatorio(max) {
+  return Math.floor(Math.random() * max);
 }
 
-// Función para obtener una portada aleatoria
-function obtenerPortadaAleatoria(){
-  let portadaAleatoria;
-
-  //Acá deben agregar el código para obtener una portada aleatoria (portada de algún item),
-  //y guardarla en la variable portadaAleatoria
-
-  return portadaAleatoria;
+function obtener5Aleatorios(array) {
+  const seleccionados = new Set();
+  while (seleccionados.size < 5) {
+    const i = numeroAleatorio(array.length);
+    seleccionados.add(i);
+  }
+  return Array.from(seleccionados).map(i => array[i]);
 }
 
-// A continuación, deben agregar el código para "enlazar" 5 portadas aleatorias al carrusel
+const slides = obtener5Aleatorios(items);
+
+const track = document.querySelector(".carousel-track");
+const dotsContainer = document.querySelector(".carousel-dots");
+
+// Crear slides
+slides.forEach((item, index) => {
+  const li = document.createElement("li");
+  li.classList.add("carousel-slide");
+  li.innerHTML = `
+    <img src="${item.Portada}" alt="${item.Nombre}">
+    <h2>${item.Nombre}</h2>
+  `;
+  track.appendChild(li);
+
+  const dot = document.createElement("button");
+  if (index === 0) dot.classList.add("active");
+  dotsContainer.appendChild(dot);
+});
+
+// Navegación
+const slidesDOM = Array.from(document.querySelectorAll(".carousel-slide"));
+const dots = Array.from(document.querySelectorAll(".carousel-dots button"));
+const prevButton = document.querySelector(".carousel-button.prev");
+const nextButton = document.querySelector(".carousel-button.next");
+let currentIndex = 0;
+
+function updateSlide(index) {
+  const width = slidesDOM[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${width * index}px)`;
+  dots.forEach(dot => dot.classList.remove("active"));
+  dots[index].classList.add("active");
+}
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    currentIndex = index;
+    updateSlide(currentIndex);
+  });
+});
+
+prevButton.addEventListener("click", () => {
+  currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+  updateSlide(currentIndex);
+});
+
+nextButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlide(currentIndex);
+});
+
+setInterval(() => {
+  currentIndex = (currentIndex + 1) % slides.length;
+  updateSlide(currentIndex);
+}, 5000);
