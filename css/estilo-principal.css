@@ -198,6 +198,7 @@
     font-weight: bold;
     text-transform: uppercase;
  }
+ 
 
 
  #footer-principal {
@@ -392,6 +393,7 @@
 
  .ico-fav{
    height: 100px;
+   
    position: absolute;
    margin-left: 14%;
  }

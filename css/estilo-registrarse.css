@@ -42,7 +42,8 @@ body {
 
 /* Estilo del cuadro de login */
 .login-box {
-    background-color: #ffffff1d;
+    background-color: #0ce926;
+;
     padding: 3rem 3rem;
     border-radius: 3rem;
     margin: 3rem;
@@ -58,6 +59,8 @@ body {
 
 /* Título del login */
 .login-box h2 {
+
+    
     text-align: center;
     color: #ffffff;
     margin-bottom: 2rem;
@@ -122,37 +125,4 @@ body {
 
 .extra-links a:hover {
     text-decoration: underline;
-}
-
-/* Animación 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}*/
-
-#footer-principal {
-    background-color: #e80c4c;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1em;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-#footer-centro img#qr-code {
-    width: 50%;
-    height: auto;
-}
-
-#footer-centro p {
-    font-size: 1rem;
-    color: #ccc;
 }

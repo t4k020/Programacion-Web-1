@@ -12,6 +12,7 @@ a{
 }
 
 
+
 /* Header con logo e íconos centrados */
 #encabezado-principal {
     background-color: #000;
@@ -24,17 +25,6 @@ a{
 }
 
 
-.icons {
-    display: flex;
-    gap: 1.2em;
-}
-
-.icon {
-    font-size: 1.2rem;
-    color: #cc0b42;
-}
-
-
 
 .contenedor-login {
     flex: 1;
@@ -42,38 +32,36 @@ a{
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: #077914;
+   
 }
 
 
 /* Estilo del cuadro de login */
 .login-box {
-   background-color: #ffffff10;
+   background-color: #0ce926;
    padding: 3rem 3rem;
    border-radius: 3rem;
    margin: 3rem;
    box-shadow: 0 0 25px rgba(0, 0, 0, 0.424);
    width: 100%;
    max-width: 400px;
-   animation: fadeIn 0.8s ease-in-out;
+   
 }
 .login-box.whiteModes{
     background-color: #f20f50;
     color: rgb(0, 0, 0);
 }
 
-/* Título del login */
 .login-box h2 {
     text-align: center;
     color: #ffffff;
     margin-bottom: 2rem;
-    size: 2em;
+    
 }
 
-/* Inputs */
+
 .input-box {
     margin-bottom: 1.5rem;
-    position: relative;
 }
 
 .input-box input {
@@ -82,8 +70,6 @@ a{
     padding: 12px 15px;
     border-radius: 10px;
     border: 1px solid #cccccc;
-    outline: none;
-    font-size: 15px;
 }
 
 .input-box input:focus {
@@ -126,28 +112,8 @@ a{
     text-decoration: underline;
 }
 
-/* Animación 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}*/
 
-#footer-principal {
-   display: flex; 
-   justify-content: center;
-   gap: 10em;
-   background-color: #cc0b42;
-   color: white;
-   padding: 3em ;
-   max-height: 100em;
-   
-}
+
 
 
 
