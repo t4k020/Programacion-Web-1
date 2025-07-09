@@ -1,5 +1,7 @@
 ﻿import { accionesTarjetas } from "./accionesTarjetas.js";
 import { agregarQuitarFavoritos } from './agregar-quitar-favoritos.js';
+import { estrellas } from './rating.js';
+ 
 
 export function cargarJuegos(data) {
    const seccion = document.querySelector('#seccion-categoria');
@@ -22,7 +24,7 @@ export function cargarJuegos(data) {
                      <p class="item-valor-autor">${Autor}</p>
                      <img class="item-valor-portada" src='${Portada}' alt='Imagen de Portada'>
                      <p class="item-valor-descripcion">${Descripcion}</p>
-                     <p class="item-valor-rating">${Rating}</p>
+                     <div class="item-valor-rating">${estrellas(Rating)}</div>
                   </header>
                   <div class="detalle-articulo">
                      <h4 class="item-campo-personalizado_1">${personalizados[0].split(".")[1]}</h4>
@@ -42,4 +44,5 @@ export function cargarJuegos(data) {
 
    accionesTarjetas();
    agregarQuitarFavoritos();
+   
 }
