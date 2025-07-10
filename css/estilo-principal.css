@@ -198,7 +198,25 @@
     font-weight: bold;
     text-transform: uppercase;
  }
+
+
+
+ #search{
+  
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid #0ce926;
+  border-radius: 25px;
+  padding: 5px 10px;
+  background-color: #e4b8c4;
+  transition: border 0.3s ease;
+ }
  
+ #search:focus-within {
+  border-color: #cc0b42;
+}
+
 
 
  #footer-principal {
