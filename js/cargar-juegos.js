@@ -1,13 +1,15 @@
 ﻿import { accionesTarjetas } from "./accionesTarjetas.js";
 import { agregarQuitarFavoritos } from './agregar-quitar-favoritos.js';
 import { estrellas } from './rating.js';
- 
+
 
 export function cargarJuegos(data) {
+   const paginaActual = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
    const seccion = document.querySelector('#seccion-categoria');
    seccion.innerHTML = '';
 
-   const favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
+   let favoritos = [];
+   favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
    console.log('favoritos: ', favoritos)
 
 
@@ -18,7 +20,7 @@ export function cargarJuegos(data) {
 
       seccion.innerHTML += `
                <article id="${Id}" class="articulo-categoria">
-                  <img class="ico-fav" src="/assets/img/${favoritos.includes(Id) ? 'fav.ico' : 'unfav.ico'}" alt="agregar/quitar favoritos">
+                  <img class="ico-fav" src=".${paginaActual === 'favoritos.html' ? '.' : ''}/assets/img/${favoritos.includes(Id) ? 'fav.ico' : 'unfav.ico'}" alt="agregar/quitar favoritos">
                   <header class="header-articulo">
                      <p class="item-valor-nombre">${Nombre}</p>
                      <p class="item-valor-autor">${Autor}</p>
@@ -44,5 +46,5 @@ export function cargarJuegos(data) {
 
    accionesTarjetas();
    agregarQuitarFavoritos();
-   
+
 }
