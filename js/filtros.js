@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
             categoriasFiltradas = itemsTotales.filter((item) => item.Categoria === linkCategoria.innerHTML)
             buscador.dispatchEvent(new Event('input'));
 
+            linksCategorias.forEach(link => link.style.backgroundColor = '#e80c4c');
+            linkCategoria.style.backgroundColor = 'blue';
+
             console.log('Filtro categoria: ', categoriasFiltradas)
         });
     });
