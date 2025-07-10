@@ -1,8 +1,8 @@
 export function estrellas(rating) {
   
   let estrellas = '';
-  const fullStar = '<img src="../assets/img/64px-Full_Star_Yellow.svg.png" alt="Estrella llena" class="estrella">';
-  let emptyStar = '<img src="../assets/img/64px-Empty_Star.svg.png" alt="Estrella vacía" class="estrella">';
+  const fullStar = '<img src="/Programacion-Web-1/assets/img/64px-Full_Star_Yellow.svg.png" alt="Estrella llena" class="estrella">';
+  let emptyStar = '<img src="/Programacion-Web-1/assets/img/64px-Empty_Star.svg.png" alt="Estrella vacía" class="estrella">';
 
 
 
