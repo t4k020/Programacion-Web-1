@@ -12,14 +12,14 @@ export function agregarQuitarFavoritos() {
             const url = e.target.src.split('/');
             const src = url[url.length - 1];
 
-            if (src === 'fav.ico') {
-                e.target.src = `.${paginaActual === 'favoritos.html' ? '.' : ''}/assets/img/unfav.ico`;
+            if (src === 'fav.png') {
+                e.target.src = `.${paginaActual === 'favoritos.html' ? '.' : ''}/assets/img/unfav.png`;
 
                 const id = e.target.closest('article').id;
                 favoritos = favoritos.filter((favs) => favs !== id)
                 localStorage.setItem('favoritos', JSON.stringify(favoritos))
             } else {
-                e.target.src = `.${paginaActual === 'favoritos.html' ? '.' : ''}/assets/img/fav.ico`;
+                e.target.src = `.${paginaActual === 'favoritos.html' ? '.' : ''}/assets/img/fav.png`;
 
                 const id = e.target.closest('article').id;
                 favoritos.push(id);
