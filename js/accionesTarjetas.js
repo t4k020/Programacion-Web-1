@@ -51,10 +51,10 @@ export function accionesTarjetas() {
 
     if (titulo && detalle) {
       titulo.addEventListener("click", function () {
-        if (detalle.style.display === "block") {
+        if (detalle.style.display === "grid") {
           detalle.style.display = "none";
         } else {
-          detalle.style.display = "block";
+          detalle.style.display = "grid";
         }
       });
     }
