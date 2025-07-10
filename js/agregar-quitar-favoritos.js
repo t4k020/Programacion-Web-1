@@ -1,4 +1,6 @@
 export function agregarQuitarFavoritos() {
+    const paginaActual = window.location.pathname.split('/')[window.location.pathname.split('/').length - 1];
+
     let favoritos = [];
     favoritos = localStorage.getItem('favoritos') ? JSON.parse(localStorage.getItem('favoritos')) : [];
 
@@ -11,13 +13,13 @@ export function agregarQuitarFavoritos() {
             const src = url[url.length - 1];
 
             if (src === 'fav.ico') {
-                e.target.src = './assets/img/unfav.ico'
+                e.target.src = `.${paginaActual === 'favoritos.html' ? '.' : ''}/assets/img/unfav.ico`;
 
                 const id = e.target.closest('article').id;
                 favoritos = favoritos.filter((favs) => favs !== id)
                 localStorage.setItem('favoritos', JSON.stringify(favoritos))
             } else {
-                e.target.src = './assets/img/fav.ico'
+                e.target.src = `.${paginaActual === 'favoritos.html' ? '.' : ''}/assets/img/fav.ico`;
 
                 const id = e.target.closest('article').id;
                 favoritos.push(id);
