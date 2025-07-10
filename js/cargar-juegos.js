@@ -18,7 +18,7 @@ export function cargarJuegos(data) {
 
       seccion.innerHTML += `
                <article id="${Id}" class="articulo-categoria">
-                  <img class="ico-fav" src="../assets/img/${favoritos.includes(Id) ? 'fav.ico' : 'unfav.ico'}" alt="agregar/quitar favoritos">
+                  <img class="ico-fav" src="assets/img/${favoritos.includes(Id) ? 'fav.ico' : 'unfav.ico'}" alt="agregar/quitar favoritos">
                   <header class="header-articulo">
                      <p class="item-valor-nombre">${Nombre}</p>
                      <p class="item-valor-autor">${Autor}</p>
